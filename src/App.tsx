@@ -7,7 +7,7 @@ import Spinner from './components/Spinner/Spinner';
 // var client = Owlbot('03bc50f819a9f19c4d4946a3e0813f87179dc74f');
 const App = ()=> {
   const[input,setInput] = useState<string>('');
-  const[result,setResult] = useState<ResultObj[]>([]);
+  const[result,setResult] = useState<any>([]);
   const[getData,setGetData] = useState<boolean>(false);
   const[loading,setLoading] = useState<boolean>(false);
   const[noResult,setNoResult] = useState<boolean>(false);
@@ -15,7 +15,8 @@ const App = ()=> {
 
   const changeHandle = (e: React.ChangeEvent<HTMLInputElement>):void=>{
     setInput(e.target.value);
-    setWarnInput(false);     
+    setWarnInput(false);   
+    setNoResult(false);  
   } 
   const lookUp = ():void=>{
     if(input==='') return setWarnInput(true);
@@ -31,19 +32,21 @@ const App = ()=> {
           return res.json();
         } 
       )
-      .then((result:ResultObj[]):void=> { //:(ResultObj[]|Result404[])
+      .then((result:ResultObj[]):void=> {
         console.log(result);
-        setInput('') 
+        
         setResult(result)
         setGetData(true)
         setLoading(false)
         setNoResult(false)
-      if(result.length === 1){
-        setInput('') 
+      if(result[0]?.message === 'No definition :('){
         setGetData(false)
         setLoading(false)
         setNoResult(true)
+      }else{
+        setInput('')
       }
+
       }
       )
   } 

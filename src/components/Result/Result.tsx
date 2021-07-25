@@ -1,9 +1,9 @@
 import './Result.css'
 import parse from 'html-react-parser';
-import {ResultType} from '../Interfaces/Interfaces'
+import {ResultType,ResultObj} from '../Interfaces/Interfaces'
 type Props = {
     getData:boolean;
-    result:any;
+    result:ResultObj;
 }
 export const Result : React.FC <Props> = (props) => {
     const picUrl:string = `https://www.google.com/search?q=${props.result.word}&tbm=isch&sxsrf=ALeKk037CG3UAeAPXBwJ5-Vpq_tnYvVj6A%3A1626383806124&source=hp&biw=1366&bih=625&ei=vqXwYNrFBMPQ-gTEspSgBw&oq=lamp&gs_lcp=CgNpbWcQAzIECCMQJzIFCAAQsQMyBQgAELEDMgUIABCxAzIFCAAQsQMyBQgAELEDMgIIADICCAAyBQgAELEDMgUIABCxAzoICAAQsQMQgwFQ_B9YwyZgsytoAHAAeACAAbwCiAHFCZIBBTItMS4zmAEAoAEBqgELZ3dzLXdpei1pbWc&sclient=img&ved=0ahUKEwjanJ7o_-XxAhVDqJ4KHUQZBXQQ4dUDCAc&uact=5`;

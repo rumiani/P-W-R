@@ -1,4 +1,5 @@
 import './Spinner.css'
+// import {ResultObj} from '../Interfaces/Interfaces'
 type Props = {
     loading: boolean;
     getData: boolean;
@@ -14,7 +15,7 @@ const Spinner : React.FC <Props> = (props) => {
         {props.noResult?
             <div className='noResult'>
                 Opps! <br />
-                Sorry we couln't find any results. <br />
+                Sorry we couln't find any results for the word: "{props.input}". <br />
                 <a href={`https://www.ldoceonline.com/dictionary/${props.input}`} target='_blank'>
                     You may look it up here </a>
             </div>
