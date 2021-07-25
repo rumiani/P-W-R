@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/PWM/static/css/main.35be9755.chunk.css",
-    "main.js": "/PWM/static/js/main.48c233fc.chunk.js",
-    "main.js.map": "/PWM/static/js/main.48c233fc.chunk.js.map",
-    "runtime-main.js": "/PWM/static/js/runtime-main.ff485a52.js",
-    "runtime-main.js.map": "/PWM/static/js/runtime-main.ff485a52.js.map",
-    "static/js/2.c8a6ffbe.chunk.js": "/PWM/static/js/2.c8a6ffbe.chunk.js",
-    "static/js/2.c8a6ffbe.chunk.js.map": "/PWM/static/js/2.c8a6ffbe.chunk.js.map",
-    "index.html": "/PWM/index.html",
-    "static/css/main.35be9755.chunk.css.map": "/PWM/static/css/main.35be9755.chunk.css.map",
-    "static/js/2.c8a6ffbe.chunk.js.LICENSE.txt": "/PWM/static/js/2.c8a6ffbe.chunk.js.LICENSE.txt"
+    "main.css": "/Project-with-Ronaldo/static/css/main.35be9755.chunk.css",
+    "main.js": "/Project-with-Ronaldo/static/js/main.48c233fc.chunk.js",
+    "main.js.map": "/Project-with-Ronaldo/static/js/main.48c233fc.chunk.js.map",
+    "runtime-main.js": "/Project-with-Ronaldo/static/js/runtime-main.bba418eb.js",
+    "runtime-main.js.map": "/Project-with-Ronaldo/static/js/runtime-main.bba418eb.js.map",
+    "static/js/2.c8a6ffbe.chunk.js": "/Project-with-Ronaldo/static/js/2.c8a6ffbe.chunk.js",
+    "static/js/2.c8a6ffbe.chunk.js.map": "/Project-with-Ronaldo/static/js/2.c8a6ffbe.chunk.js.map",
+    "index.html": "/Project-with-Ronaldo/index.html",
+    "static/css/main.35be9755.chunk.css.map": "/Project-with-Ronaldo/static/css/main.35be9755.chunk.css.map",
+    "static/js/2.c8a6ffbe.chunk.js.LICENSE.txt": "/Project-with-Ronaldo/static/js/2.c8a6ffbe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff485a52.js",
+    "static/js/runtime-main.bba418eb.js",
     "static/js/2.c8a6ffbe.chunk.js",
     "static/css/main.35be9755.chunk.css",
     "static/js/main.48c233fc.chunk.js"
