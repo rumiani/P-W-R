@@ -1,7 +1,7 @@
 .loading{
 }
 .noResult{
-  width: 80vh;
+  width: 450px;
   height: 150px;
   /* background-color: red; */
   box-shadow: 2px 1px 2px black;
@@ -10,6 +10,9 @@
   font-weight: bold;
   color: red;
   text-align: justify;
+}
+@media(max-width:500px){
+  .noResult{width: 95%;}
 }
 .loader,
 .loader:before,

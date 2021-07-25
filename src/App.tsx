@@ -12,6 +12,7 @@ const App = ()=> {
   const[loading,setLoading] = useState<boolean>(false);
   const[noResult,setNoResult] = useState<boolean>(false);
   const[warnInput,setWarnInput] = useState<boolean>(false);
+  const[err,setErr] = useState<boolean>(false);
 
   const changeHandle = (e: React.ChangeEvent<HTMLInputElement>):void=>{
     setInput(e.target.value);
@@ -23,18 +24,17 @@ const App = ()=> {
     setLoading(true);
     setGetData(false);
     setNoResult(false);
-    fetch(`https://owlbot.info/api/v4/dictionary/${input}`, {
-      headers: {
-        Authorization: "Token b1921c221f0ed059edc2e3af4c2613885e1c80fe"
-      }
+    setErr(false)
+      fetch(`https://owlbot.info/api/v4/dictionary/${input}`, {
+        headers: {
+          Authorization: "Token b1921c221f0ed059edc2e3af4c2613885e1c80fe"
+        }
       })
-      .then(res => {          
-          return res.json();
-        } 
+      .then(res => {    
+        return res.json();
+      } 
       )
       .then((result:ResultObj[]):void=> {
-        console.log(result);
-        
         setResult(result)
         setGetData(true)
         setLoading(false)
@@ -46,12 +46,18 @@ const App = ()=> {
       }else{
         setInput('')
       }
-
-      }
-      )
+    }
+    )
+    .catch(()=>{
+      setErr(true)
+      setGetData(false)
+      setLoading(false)
+      setNoResult(false)
+      setErr(true)
+    })
   } 
-    return ( 
-      <div className = 'App'>
+  return ( 
+    <div className = 'App'>
         <div className = 'header'>
           <input 
           type = "text" value = {input} 
@@ -65,6 +71,7 @@ const App = ()=> {
           getData = {getData}
           input = {input}
           noResult = {noResult}
+          err = {err}
         />
         <Result
           getData = {getData}
