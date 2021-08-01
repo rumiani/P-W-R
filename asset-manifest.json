@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Project-with-Ronaldo/static/css/main.96e73677.chunk.css",
-    "main.js": "/Project-with-Ronaldo/static/js/main.bfdb63cc.chunk.js",
-    "main.js.map": "/Project-with-Ronaldo/static/js/main.bfdb63cc.chunk.js.map",
-    "runtime-main.js": "/Project-with-Ronaldo/static/js/runtime-main.bba418eb.js",
-    "runtime-main.js.map": "/Project-with-Ronaldo/static/js/runtime-main.bba418eb.js.map",
-    "static/js/2.c8a6ffbe.chunk.js": "/Project-with-Ronaldo/static/js/2.c8a6ffbe.chunk.js",
-    "static/js/2.c8a6ffbe.chunk.js.map": "/Project-with-Ronaldo/static/js/2.c8a6ffbe.chunk.js.map",
-    "index.html": "/Project-with-Ronaldo/index.html",
-    "static/css/main.96e73677.chunk.css.map": "/Project-with-Ronaldo/static/css/main.96e73677.chunk.css.map",
-    "static/js/2.c8a6ffbe.chunk.js.LICENSE.txt": "/Project-with-Ronaldo/static/js/2.c8a6ffbe.chunk.js.LICENSE.txt"
+    "main.css": "/dictionary/static/css/main.96e73677.chunk.css",
+    "main.js": "/dictionary/static/js/main.1e07c734.chunk.js",
+    "main.js.map": "/dictionary/static/js/main.1e07c734.chunk.js.map",
+    "runtime-main.js": "/dictionary/static/js/runtime-main.6e2953fc.js",
+    "runtime-main.js.map": "/dictionary/static/js/runtime-main.6e2953fc.js.map",
+    "static/js/2.c8a6ffbe.chunk.js": "/dictionary/static/js/2.c8a6ffbe.chunk.js",
+    "static/js/2.c8a6ffbe.chunk.js.map": "/dictionary/static/js/2.c8a6ffbe.chunk.js.map",
+    "index.html": "/dictionary/index.html",
+    "static/css/main.96e73677.chunk.css.map": "/dictionary/static/css/main.96e73677.chunk.css.map",
+    "static/js/2.c8a6ffbe.chunk.js.LICENSE.txt": "/dictionary/static/js/2.c8a6ffbe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bba418eb.js",
+    "static/js/runtime-main.6e2953fc.js",
     "static/js/2.c8a6ffbe.chunk.js",
     "static/css/main.96e73677.chunk.css",
-    "static/js/main.bfdb63cc.chunk.js"
+    "static/js/main.1e07c734.chunk.js"
   ]
 }
