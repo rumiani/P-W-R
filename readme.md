@@ -1,4 +1,4 @@
-# AWR
+# Dictionary
 
 I built a web app dictionary using TypeScript and React.
 
