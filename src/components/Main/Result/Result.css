@@ -1,0 +1,14 @@
+.result{
+    animation: slide 3s;
+    background-color: rgb(225, 235, 234);
+    padding: 10px;
+    border-radius: 10px;
+}
+@keyframes slide{
+    from{
+            width: 0;
+    }
+    to{
+            width: 90%;
+    }
+}

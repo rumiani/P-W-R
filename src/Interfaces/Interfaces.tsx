@@ -12,3 +12,6 @@ export interface ResultObj {
     pronunciation? : string ,
     message?:string
 }
+// export interface InitState {
+//     getData : boolean,
+// }

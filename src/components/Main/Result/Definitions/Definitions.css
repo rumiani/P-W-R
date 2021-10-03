@@ -1,0 +1,31 @@
+.definitions{
+    margin: 50px 0;
+    border-top: 1px solid rgb(200, 194, 194);
+}
+
+.definitions div span:nth-child(1){
+    height: 40px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.definitions div span:nth-child(2){
+    width: 80%;
+}
+@media (max-width:500px){
+    .definitions div{
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+    .definitions div span:nth-child(1){
+        width: 200px;
+        margin: 0 auto;
+    }
+    .definitions div span:nth-child(2){
+        margin: 0 auto;
+        text-align: justify;
+        width: 95%;
+    }
+}

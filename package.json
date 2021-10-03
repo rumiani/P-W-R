@@ -16,7 +16,9 @@
     "owlbot-js": "^2.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
     "react-scripts": "4.0.3",
+    "redux": "^4.1.1",
     "typescript": "^4.3.5",
     "web-vitals": "^1.0.1"
   },
@@ -26,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

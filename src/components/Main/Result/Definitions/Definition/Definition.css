@@ -1,0 +1,16 @@
+.definition{
+    display: flex;
+    align-content:flex-start;
+    padding: 5px 0;
+    
+}
+
+.definition_row{
+    background-color:rgb(14, 102, 218);
+    
+}
+.definition_result{
+    width: 80%;
+    padding: 10px;
+    text-align: left;
+}

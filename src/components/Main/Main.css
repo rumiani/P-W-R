@@ -1,0 +1,15 @@
+.main{
+    width: 90%;
+    margin: 20px auto;
+    /* animation: slide 2s; */
+    height: 0;
+    /* background-color: wheat; */
+}
+@keyframes slide{
+    from {
+height: 0;
+    }
+    to {
+/* height: 1000px; */
+    }
+}

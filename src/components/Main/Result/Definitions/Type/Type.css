@@ -1,0 +1,27 @@
+.type{
+    display: flex;
+    /* align-content:flex-start; */
+    
+}
+
+.type_row{
+    width: 200px;
+    background-color:rgb(67, 67, 199);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.type_result{
+    width: 80%;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+@media(max-width:500px){
+    .type_result{
+        text-align: center !important;
+        align-content: center;
+        /* background-color: turquoise; */
+    }
+}

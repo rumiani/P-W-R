@@ -1,0 +1,19 @@
+.example{
+    display: flex;
+    align-content:flex-start;
+    padding: 5px 0;
+}
+
+.example_row{
+    width: 200px;
+    background-color:rgb(77, 153, 240);
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    height: 40px;
+}
+.example_result{
+    width: 80%;
+    padding: 10px;
+    text-align: left;
+}

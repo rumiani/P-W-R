@@ -1,0 +1,33 @@
+.welcome{
+        width: 450px;
+        height: 150px;
+        box-shadow: 2px 1px 2px black;
+        margin: 20px auto;
+        padding: 20px;
+        text-align: justify;
+        animation: slide 3s;
+        transition: ease-in-out;
+        position: relative;
+        top: 10px;
+        z-index: -2;
+        
+}
+@keyframes slide{
+        from{
+                top: -200px;
+        }
+        to{
+                top: 10px;
+        }
+}
+.welcome h4{
+        text-align: center;
+        margin: 0;
+}
+
+@media (max-width:500px){
+        .welcome{
+                width: 90%;
+                height: fit-content;
+        }
+}

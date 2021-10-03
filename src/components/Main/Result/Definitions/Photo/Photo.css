@@ -1,0 +1,32 @@
+.photo{
+    display: flex;
+    align-content:flex-start;
+    padding: 5px 0;
+}
+
+.photo_row{
+    
+    background-color:rgb(169, 195, 255);
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+.photo_result{
+    width: 80%;
+    padding: 10px;
+    text-align: left;
+}
+.photo_result img{
+    width: 60%;
+    margin: 0 auto;
+    transition: 1s;
+}
+.photo_result img:hover{
+    box-shadow: 10px 10px 10px rgb(34, 22, 22);
+    transform: scale(1.05);
+}
+@media(max-width:500px){
+    .photo_result img{
+        width: 90%;
+    }
+}
