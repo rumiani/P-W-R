@@ -16,7 +16,8 @@
     padding: 10px;
     color: black;
     font-weight: bold;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    text-shadow: 1px 1px 4px black;
 }
 @media(max-width:500px){
     .type_result{

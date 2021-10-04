@@ -1,6 +1,6 @@
 .welcome{
         width: 450px;
-        height: 150px;
+        /* height: 150px; */
         box-shadow: 2px 1px 2px black;
         margin: 20px auto;
         padding: 20px;
@@ -14,7 +14,7 @@
 }
 @keyframes slide{
         from{
-                top: -200px;
+                top: -400px;
         }
         to{
                 top: 10px;

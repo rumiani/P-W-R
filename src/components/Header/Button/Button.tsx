@@ -1,7 +1,7 @@
 const Button = (props:any) => {
     return(
-        <button onClick = {props.LookUp} title='Look it up'>
-            <p className='button_text'>Go</p>
+        <button className='goBtn' onClick = {props.LookUp} title='Look it up'>
+            <p className='goBtn_text'>Go</p>
         </button>
     )
 }

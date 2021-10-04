@@ -1,0 +1,30 @@
+#tooltip{
+    z-index: 5;
+    position: absolute;
+    display: none;
+    border: none;
+    border-radius: 5px 10px;
+    background-color: rgb(47, 133, 245);
+    padding: 5px 10px;
+    color: red;
+    animation: light 1s infinite ease-in;
+}
+@keyframes light{
+    from{
+        border: 1px solid red;
+    }
+    to{
+        border: 1px solid rgba(255, 0, 0, 0);
+    }
+}
+#tooltip:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+    color: black;
+    animation: unset;
+    
+}
+#tooltip:checked{
+    border: none;
+}

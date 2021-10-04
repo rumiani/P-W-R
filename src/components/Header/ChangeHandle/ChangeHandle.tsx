@@ -1,4 +1,4 @@
- const changeHandle = (props:any):void=>{
+const changeHandle = (props:any):void=>{
     props.setInput(document.querySelector('input')?.value)
     props.setNoResult(false);  
 } 

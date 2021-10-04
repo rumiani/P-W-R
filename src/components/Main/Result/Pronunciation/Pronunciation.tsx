@@ -1,3 +1,4 @@
+import { connect } from 'react-redux'
 import './pronunciation.css'
 const Pronunciation = (props:any) => {
     return(
@@ -6,9 +7,15 @@ const Pronunciation = (props:any) => {
                 Pronunciation
             </span> 
             <span className='pronunciation_result'>
-                {props.pronunciation}
+                {props.result.pronunciation}
             </span>
         </div>
     )
 }
-export default Pronunciation;
+const mapStateToProps = (state:any) => {  
+    return {
+        result: state.result,
+    }
+}
+ 
+export default connect(mapStateToProps)(Pronunciation);

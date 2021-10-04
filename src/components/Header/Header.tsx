@@ -16,6 +16,7 @@ const Header :React.FC <Props>= (props:any)=>{
           <Input 
             changeHandle={()=>changeHandle(props)}
             LookUp={()=>LookUp(props)}
+            // input = {props.input}
             />
           <Button 
             LookUp={()=>LookUp(props)}

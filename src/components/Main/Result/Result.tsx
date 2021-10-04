@@ -1,19 +1,41 @@
 import './Result.css'
-import {ResultObj} from '../../../Interfaces/Interfaces'
 import Definitions from './Definitions/Definitions';
 import Pronunciation from './Pronunciation/Pronunciation';
-type Props = {
-    result:ResultObj;
-}
-const Result : React.FC <Props> = (props) => {
+import Tooltip from './Tooltip/Tooltip';
+import cliclLookub from './CliclLookub/CliclLookub';
+import { connect } from 'react-redux';
+import LookUp from '../../Header/LookUp/LookUp';
+
+const Result : React.FC = (props:any) => {
     return ( 
-            <div className = 'result' data-testid="result">
-                {props.result.pronunciation &&<Pronunciation pronunciation= {props.result.pronunciation}/>}     
-                <Definitions result = {props.result}/>
+            <div className = 'result' data-testid="result" onMouseUp={(event)=>cliclLookub(props,event)}>
+                <Tooltip  LookUp={()=>LookUp(props)}/>
+                {props.result.pronunciation &&<Pronunciation/>}
+                <Definitions/>
             </div>
      );
 }
-
-  
-  export default Result;
+const mapStateToProps = (state:any) => {  
+    return {
+        result: state.result,
+        welcome: state.welcome,
+        input : state.input,
+        loading:state.loading,
+        getData : state.getData,
+        noResult:state.noResult,
+        err:state.err,
+    }
+  }
+  const mapDispatchProps = (dispatch:any) => {
+    return {
+      setWelcome : (welcome:boolean) => dispatch({type:'WELCOME',welcome}),
+      setGetData : (getData:boolean) => dispatch({type:'GET_DATA',getData}),
+      setInput : (input:string) => dispatch({type:'INPUT',input}),
+      setResult : (result:string) =>dispatch({type:'RESULT',result}),
+      setLoading : (loading:boolean) => dispatch({type:'LOADING',loading}),
+      setNoResult : (noResult:boolean) => dispatch({type:'NO_RESULT',noResult}),
+      setErr : (err:boolean) => dispatch({type:'ERR',err})
+    }
+  }
+export default connect(mapStateToProps, mapDispatchProps)(Result);
   
