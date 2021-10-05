@@ -1,13 +1,13 @@
 #tooltip{
     z-index: 5;
     position: absolute;
-    display: none;
     border: none;
     border-radius: 5px 10px;
-    background-color: rgb(47, 133, 245);
+    background-color: wheat;
     padding: 5px 10px;
     color: red;
     animation: light 1s infinite ease-in;
+    visibility:hidden;
 }
 @keyframes light{
     from{

@@ -8,7 +8,10 @@ import LookUp from '../../Header/LookUp/LookUp';
 
 const Result : React.FC = (props:any) => {
     return ( 
-            <div className = 'result' data-testid="result" onMouseUp={(event)=>cliclLookub(props,event)}>
+            <div className = 'result' data-testid="result" 
+            onMouseUp = {(event)=>cliclLookub(props,event)}
+            onTouchEnd={(event)=>cliclLookub(props,event)}
+            >
                 <Tooltip  LookUp={()=>LookUp(props)}/>
                 {props.result.pronunciation &&<Pronunciation/>}
                 <Definitions/>

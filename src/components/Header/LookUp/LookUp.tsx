@@ -31,15 +31,13 @@ const LookUp = (props:any)=>{
       }
     }
     )
-    // .catch((err)=>{
-    //   console.log('hhhhhhh');
-      
-    //   props.setErr(true)
-    //   props.setGetData(false)
-    //   props.setLoading(false)
-    //   props.setNoResult(false)
-    //   props.setErr(true)
-    // })
+    .catch((err)=>{      
+      props.setErr(true)
+      props.setGetData(false)
+      props.setLoading(false)
+      props.setNoResult(false)
+      props.setErr(true)
+    })
   } 
 
 export default LookUp;
